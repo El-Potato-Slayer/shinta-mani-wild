@@ -9,7 +9,7 @@
         <hero-image :image="resort.featuredImage"></hero-image>
       </div>
 
-      <div class="container is-small mb-5 page-description">
+      <div id="tent-types" class="container is-small mb-5 page-description">
         <article>
           <base-heading
             :show-placeholder="!resort.id"
@@ -251,7 +251,8 @@ export default Vue.extend({
   mounted() {
     this.$store.dispatch('resort/getItemBySlug', this.slug)
     this.$store.dispatch('category/getItemsByName', 'accommodations')
-  }
+  },
+ 
 })
 </script>
 

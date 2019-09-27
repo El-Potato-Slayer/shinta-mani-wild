@@ -60,7 +60,16 @@
                   :text="'View Tents'"
                 ></base-image-link>
               </div>
-            </div>
+              <div
+                v-else
+                class="ml-1">
+                <base-image-link
+                  :class-name="'is-secondary is-md ml-2'"
+                  :href="'/tents#tent-types'"
+                  :text="'Select Tent'"
+                ></base-image-link>
+              </div>
+              </div>
           </div>
         </div>
       </div>
@@ -122,7 +131,8 @@ export default Vue.extend({
     },
     onClickOutsideDropdown() {
       this.isDropdownTentsOpen = false
-    }
+    },
+    
   },
   destroyed() {
     document.removeEventListener('click', this.onClickOutsideDropdown)
