@@ -9,7 +9,7 @@
         <hero-image :image="resort.featuredImage"></hero-image>
       </div>
 
-      <div id="tent-types" class="container is-small mb-5 page-description">
+      <div id="tent-types"  class="container is-small mb-5 page-description">
         <article>
           <base-heading
             :show-placeholder="!resort.id"
