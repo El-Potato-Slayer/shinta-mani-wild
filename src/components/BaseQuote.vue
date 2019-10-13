@@ -90,7 +90,7 @@ export default Vue.extend({
     },
     type: {
       type: String,
-      required: true,
+      default: 'grass1',
       validator: function(value: string) {
         const acceptable = ['bird-left', 'grass1']
         return acceptable.indexOf(value) >= 0
@@ -172,6 +172,7 @@ export default Vue.extend({
     padding: rem(40px 24px);
     .quote {
       background-color: $brand-5;
+      height: 100%;
     }
   }
   .x-spacings {
